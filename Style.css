@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    padding: 16px 24px 16px;
+}
+
+.apresentacao{
+    margin: 4%;
+    display: flex;
+    max-width: 1160px;
+}
+
+.apresentacao__sessao{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 80px;
+    padding-left: 120px;
+}
+
+textarea{
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color:#0A3871;
+    background: transparent;
+    border: none;
+    resize: none;
+    outline-style: none;
+    margin-left: 30px;
+    height: 55vh;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+}
+
+
+
+.exclamacao{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 16px;
+    font-family: 'Inter' , sans-serif;
+    font-size: 0.75rem;
+}
+
+.apresentacao__botoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 680px;
+    height: 67px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.apresentacao_botoes_cripto{
+    background-color: #0A3871;
+    text-align: center;
+    color:white;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 24px 0;
+    
+}
+
+.apresentacao_botoes_descripto{
+    background-color: #D8DFE8;
+    text-align: center;
+    color:#0A3871;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 24px 0;
+    border: 1px solid #0A3871
+
+}
+
+
+.btn-copiar{
+    background-color:white;
+    color:#0A3871;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 24px 0;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+#copiar.btn-copiar{
+    display: flex;
+    width: 10vw;
+    height: 67px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boneco{
+    width: 336px;
+    height: 304px;   
+}
+
+.retangulo{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+.mensagem{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #343A40;
+    width: 100%;
+    height: 58px;
+}
+
+.digite-aqui{
+    font-size: 1rem;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #343A40;
+    width: 336px;
+    height: 48px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background-color: #D8DFE8;
+}
+
+.rodape h3{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: #0A3871;
+}
+
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+
+}
+
+
+@media screen and (max-width: 1220px) {
+    .apresentacao {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .apresentacao__sessao {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 0;
+    }
+
+    .boneco {
+        width: 0px;
+        height: 0px;
+    }
+
+    .apresentacao__botoes {
+        flex-direction: column;
+        width: 100%
+    }
+
+    #copiar.btn-copiar{
+        flex-direction: column;
+        width: 30vw;
+    }    
+
+    .container {
+        justify-content: center;
+    }
+
+    /* textarea{
+        text-align: center;
+    } */
+    
+    .retangulo{
+        width: 100%;
+        height: 133px;
+        margin-top: 32px;
+        padding: 6px 4px 0 4px;
+    }
+    
+    .rodape{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
